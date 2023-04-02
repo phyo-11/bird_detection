@@ -50,8 +50,10 @@ if uploaded_file is not None:
     # Get path to latest directory
     latest_dir = os.path.join("runs/detect/", dirs[0])
     print(latest_dir)
-    image_files = glob.glob(latest_dir + '/*.jpeg')
+    image_files = glob.glob(latest_dir + '/*.jp*g')
     st.image(image_files[0], caption = 'Predicted Image', use_column_width = True)
+st.markdown('<p style="color: aqua;">Proudly messed up by Team3TinePat</p>', unsafe_allow_html=True)
+    
 
 
     
