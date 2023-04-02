@@ -1,5 +1,4 @@
 streamlit
-subprocess
 Pillow
 os
 glob
